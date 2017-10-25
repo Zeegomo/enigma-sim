@@ -56,7 +56,7 @@ int Enigma(int num,int numrot1,int numrot2,int numrot3, char rotorSettingCharInp
     sort(numrot);
     
     FILE *fin;
-    fin=fopen("/Users/giancarlobonzi/Desktop/input.txt","r");
+    fin=fopen("input.txt","r");
     if(fin == NULL)
     {
         printf("Impossibile aprire il file\n");
