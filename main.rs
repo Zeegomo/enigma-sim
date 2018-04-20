@@ -134,7 +134,7 @@ fn main() {
 
 fn init_quadgram(hash_map: &mut HashMap<Vec<u8>, u64>) {
     println!("Letter frequency initialization...");
-    let lines = lines_from_file("/home/zeegomo/Documents/robe/english_quadgrams.txt");
+    let lines = lines_from_file("english_quadgrams.txt");
     let mut line;
     let mut current;
     for i in 0..lines.len() {
@@ -154,7 +154,7 @@ fn init_quadgram(hash_map: &mut HashMap<Vec<u8>, u64>) {
 
 fn init_quad_vect(prob: &mut Vec<String>, value: &mut Vec<u64>){
     println!("Letter frequency initialization...");
-    let lines = lines_from_file("/home/zeegomo/Documents/robe/english_quadgrams.txt");
+    let lines = lines_from_file("english_quadgrams.txt");
     let mut line;
     let mut current;
     for i in 0..lines.len() {
@@ -192,14 +192,7 @@ fn enigma_encrypt(message: &[u8], length: u64, numrot1: u64, numrot2: u64, numro
     let mut enigma = message.to_vec();
     //let stdin = io::stdin();
     let mut rotor_setting = [[0 as u8; 3]; 27];
-    /*let mut lines = lines_from_file("/home/zeegomo/Documents/robe/input.txt");
 
-    for i in 0..3 {
-        let mut iter = lines[i].split_whitespace();
-        for z in 0..27 as usize {
-            rotor_setting[z][numrot[i] as usize] = u8::from_str_radix(iter.next().unwrap(), 10).unwrap().to_owned();
-        }
-    }*/
     for z in 0..27{
         rotor_setting[z][numrot[0] as usize] = ROT1[z];
     }
