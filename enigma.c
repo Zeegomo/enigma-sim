@@ -216,7 +216,7 @@ int InitQuadgramma()
     long int iii=0, probability=0;
     char quadgrams[5];
     FILE *quad;
-    quad=fopen("/Users/giancarlobonzi/Desktop/provaser/provaser/englishQuadgrams.txt","r");
+    quad=fopen("english_quadgrams.txt","r");
     if(quad == NULL)
     {
         printf("Impossibile aprire il file\n");
@@ -277,7 +277,7 @@ int main()
     
     InitQuadgramma();
     FILE *fin;
-    fin=fopen("/Users/giancarlobonzi/Desktop/input.txt","r");
+    fin=fopen("input.txt","r");
     if(fin == NULL)
     {
         printf("Impossibile aprire il file\n");
