@@ -12,7 +12,9 @@ If we use hash tables instead, the complexity of the search function is O(1) is 
 That alone makes a huge difference.
 
 Indeed i simply ported the code to Rust and changed the scoring function without touching other parts:
+
 (C old version based on measures by @franOffi on mid 2011 i5 iMac)
+
 (Rust new version based on measures by me on i5 7200u)
 
 | Number of letters | C time          | Rust time         |
