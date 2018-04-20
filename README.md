@@ -1,3 +1,3 @@
-# enigma-sim and the power of HashTables
-simulate and decrypt enigma cipher (commercial version)
+# enigma-sim and the power of hashtables
+Back in 2015 
 
