@@ -2,7 +2,7 @@
 Back in 2015 me and my friend @franOffi decided to build an Enigma simulator with decryption capabilities.
 I was super happy with the results because we did it all ourselves and after a month or two of pair programming the project worked flawlessy.
 
-Then i began university and I was taught hash tables.
+Then I began university and I was taught hash tables.
 
 That seemed an optimal project to test this data structure. 
 During the brute-force decryption we score ciphertext based on the probabilities of quadgrams. In the first version, we organized strings and probabilities in arrays and the search was performed through for loops. It is quite clear that the complexity of that search function is O(M) where M is the number of quadgrams.
